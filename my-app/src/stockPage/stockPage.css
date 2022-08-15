@@ -1,0 +1,77 @@
+.container {
+    /* display: flex;
+    justify-content: center; */
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+  .label,
+  .selector { 
+    margin-right: 15px;
+  }
+
+  .date{
+    /* position: absolute; */
+    
+  }
+
+  span{
+    cursor: pointer;
+  }
+
+  .e-date-range-wrapper{
+    background-color: aqua;
+  }
+
+  .rdrDateDisplayWrapper{
+    /* background-color: rgb(21, 21, 21) !important; */
+  }
+  
+  .rdrDateDisplay{
+    /* background-color: rgb(28, 28, 28); */
+  }
+
+  .rdrMonthAndYearWrapper{
+    /* background-color: black; */
+  }
+
+  .rdrMonth{
+    /* background-color: rgb(31, 31, 31); */
+    max-width: 100%;
+    min-width: 100%;
+    width: 0em !important;
+  }
+
+  button.rdrNextPrevButton .rdrNextButton{
+    background-color: blueviolet;
+  }
+
+  .rdrNextButton{
+    background-color: blueviolet;
+  }
+
+  button{
+    background-color: brown;
+  }
+
+  li{
+    background-color: aquamarine;
+  }
+
+  button.rdrNextButton{
+    background: none;
+  }
+
+  button.rdrPprevButton{
+    background: none;
+  }
+
+  .rdrDateDisplayItem{
+    background: none !important;
+    border: none !important;
+  }
+
+  .fixedplotis{
+    max-width: 100vw;
+  }

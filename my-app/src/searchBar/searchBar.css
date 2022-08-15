@@ -1,0 +1,9 @@
+span.errorSpan{
+    color: #AA4A44;
+    display: none;
+}
+
+
+input:invalid[focused="true"] ~ span.errorSpan{
+    display: block;
+}
