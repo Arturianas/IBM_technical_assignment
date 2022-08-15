@@ -10,6 +10,8 @@ app.use(express.json())
 require('dotenv').config()
 require('./models/console-log-interceptor.js')('http_server_1');
 
+const path = require('path');
+
 
 // candles
 app.get('/candles/:symbol/:resolution/:from/:to', (req, res) => {
@@ -105,11 +107,15 @@ app.get('/candles/:symbol/:resolution/:from/:to', (req, res) => {
   })
 
 
-  app.use(express.static(path.join(__dirname, "/my-app/build")));
+ 
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/my-app/build', 'index.html'));
-});
+app.use(express.static(path.join(__dirname, "/my-app/build")));
+
+  app.get('*', (req, res) =>
+    res.sendFile(
+      path.resolve(__dirname, 'my-app', 'build', 'index.html')
+    )
+  );
 
    
   app.listen(process.env.PORT || PORT, () => {
