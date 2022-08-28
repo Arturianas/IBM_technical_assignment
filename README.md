@@ -25,3 +25,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 Demo website - https://ficuss.herokuapp.com
+
+Have a nice day!
